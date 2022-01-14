@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home', [
-        'title' => "Database Management by Dhon Studio"
+        'title'         => "Database Management by Dhon Studio",
+        'stylesheets'   => ['font-awesome', 'startbootstrap-sb-admin-2'],
+        'tables'        => ['Table 1', 'Table 2']
     ]);
 });

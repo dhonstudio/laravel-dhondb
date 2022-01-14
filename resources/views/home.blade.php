@@ -31,7 +31,12 @@
 					</thead>
 
 					<tbody>
-						
+						@foreach ($tables as $table)
+                            <tr>
+                                <td><a href="#">{{ $table }}</a></td>
+                                <td></td>
+                            </tr>
+                        @endforeach
 					</tbody>
 				</table>
 			</div>
