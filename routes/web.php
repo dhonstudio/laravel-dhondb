@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Table;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,6 @@ Route::get('/', function () {
     return view('home', [
         'title'         => "Database Management by Dhon Studio",
         'stylesheets'   => ['font-awesome', 'startbootstrap-sb-admin-2'],
-        'tables'        => ['Table 1', 'Table 2']
+        'tables'        => Table::all()
     ]);
 });
